@@ -52,29 +52,17 @@
 		</dependency>
 	</dependencies>
 	
-<build>
-   <plugins>
-      <plugin>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-maven-plugin</artifactId>
-         <configuration>
-            <skip>true</skip>
-         </configuration>
-         <executions>
-            <execution>
-               <phase>none</phase>
-            </execution>
-         </executions>
-      </plugin>
-      <plugin>
-         <groupId>rg.springframework.boot</groupId>
-         <artifactId>pring-boot-maven-plugin<</artifactId>
-         <configuration>
-            <skip>true</skip>
-         </configuration>
-      </plugin>
-   </plugins>
-</build>
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+	                <fork>true</fork>
+	            </configuration>
+			</plugin>
+		</plugins>
+	</build>
 	
+
 </project>
