@@ -68,7 +68,7 @@
       </plugin>
       <plugin>
          <groupId>rg.springframework.boot</groupId>
-         <artifactId>jib-maven-plugin</artifactId>
+         <artifactId>pring-boot-maven-plugin<</artifactId>
          <configuration>
             <skip>true</skip>
          </configuration>
