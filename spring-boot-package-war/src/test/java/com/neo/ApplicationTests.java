@@ -1,16 +1,23 @@
-package com.neo;
+package com.example.helloworld;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import com.example.helloworld.controller.HelloWorldController;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Application.class)
-public class ApplicationTests {
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-	@Test
-	public void contextLoads() {
-	}
+
+@SpringBootTest
+class HelloWorldApplicationTests {
+
+    @Autowired
+    private HelloWorldController helloWorldController;
+
+    @Test
+    void contextLoads() {
+        // to ensure that controller is getting created inside the application context
+        assertNotNull(helloWorldController);
+    }
 
 }
